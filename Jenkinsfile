@@ -17,7 +17,7 @@ node {
     }
 
     stage 'Gradle build' {
-        def buildInfo - rtGradle.run rootDir: "some/directory"
+        def buildInfo = rtGradle.run rootDir: "some/directory"
     }
 
     stage 'Publish build info' {
