@@ -1,7 +1,7 @@
 #!/usr/bin/groovy
 
 
-// node {
+node {
 //    def server = Artifactory.server url: SERVER_URL, credentialsId: CREDENTIALS
 //    def rtGradle = Artifactory.newGradleBuild()
     // def buildInfo = Artifactory.newBuildInfo()
@@ -31,4 +31,4 @@
         sh "echo Publish build info"
 //        sh "./gradle clean build"
     }
-// }
+}
