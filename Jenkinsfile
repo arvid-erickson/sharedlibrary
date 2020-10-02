@@ -23,6 +23,7 @@
 
     stage ('Publish build info') {
 //        server.publishBuildInfo buildInfo
-        sh "./gradle clean build"
+        sh "echo Publish build info"
+//        sh "./gradle clean build"
     }
 // }
