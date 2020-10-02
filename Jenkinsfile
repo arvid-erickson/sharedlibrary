@@ -6,8 +6,9 @@ node {
 //    def rtGradle = Artifactory.newGradleBuild()
     // def buildInfo = Artifactory.newBuildInfo()
     
-    stage ('Clone') {
+    stage ("Clone") {
 //        git clone 'https://...'
+        sh "echo Clone repo to build"
     }
 
     stage ('Artifactory Config') {
@@ -15,10 +16,12 @@ node {
         // Set Artifactory repositories for dependancies resolution and artifacts deployment
 //        rtGradle.deployer repo:'ext-release-local', server: server
 //        rtGradle.resolver repo:'remote-repos', server: server
+        sh "echo Artifactory stuff"
     }
 
     stage ('Gradle build') {
 //        def buildInfo = rtGradle.run rootDir: "some/directory"
+          sh "echo gardle clean build"
     }
 
     stage ("Publish build info") {
