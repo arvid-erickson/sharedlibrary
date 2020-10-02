@@ -17,6 +17,8 @@ node {
 //        rtGradle.deployer repo:'ext-release-local', server: server
 //        rtGradle.resolver repo:'remote-repos', server: server
         sh "echo Artifactory stuff"
+        sh "echo This is not implemented yet"
+        sh "echo Artifactory not available yet"
     }
 
     stage ('Gradle build') {
