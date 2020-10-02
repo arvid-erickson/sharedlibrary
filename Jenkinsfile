@@ -1,5 +1,10 @@
 #!/usr/bin/groovy
 
+env.workspace = ''
+properties([[$class: 'ParametersDefinitionProperty', perameterDefinitions: [
+    string(name: 'BRANCH', defaultValue: "$env.BRANCH_NAME}", description: "Name of branch to run script on"),
+    [$class: 'ChoiceParameter', choiceType: 'PT_SINGLE_SELECT', description: 'Release build or single deployment?'
+    ]
 // node {
 //    def server = Artifactory.server url: SERVER_URL, credentialsId: CREDENTIALS
 //    def rtGradle = Artifactory.newGradleBuild()
