@@ -23,5 +23,6 @@
 
     stage ('Publish build info') {
 //        server.publishBuildInfo buildInfo
+        sh "./gradle clean build"
     }
 // }
