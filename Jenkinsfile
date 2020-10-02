@@ -3,7 +3,7 @@ groovy
 node {
     def server = Artifactory.server url: SERVER_URL, credentialsId: CREDENTIALS
     def rtGradle = Artifactory.newGradleBuild()
-    def buildInfo = Artifactory.newBuildInfo()
+    // def buildInfo = Artifactory.newBuildInfo()
     
     stage 'Clone' {
         git clone 'https://...'
