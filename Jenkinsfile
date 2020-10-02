@@ -1,4 +1,4 @@
-groovy
+#!groovy
 
 node {
     def server = Artifactory.server url: SERVER_URL, credentialsId: CREDENTIALS
