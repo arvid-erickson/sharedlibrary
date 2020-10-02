@@ -1,12 +1,12 @@
 #!groovy
 
-node {
+// node {
 //    def server = Artifactory.server url: SERVER_URL, credentialsId: CREDENTIALS
 //    def rtGradle = Artifactory.newGradleBuild()
     // def buildInfo = Artifactory.newBuildInfo()
     
     stage 'Clone' {
-        git clone 'https://...'
+//        git clone 'https://...'
     }
 
     stage 'Artifactory Config' {
@@ -17,10 +17,10 @@ node {
     }
 
     stage 'Gradle build' {
-        def buildInfo = rtGradle.run rootDir: "some/directory"
+//        def buildInfo = rtGradle.run rootDir: "some/directory"
     }
 
     stage 'Publish build info' {
-        server.publishBuildInfo buildInfo
+//        server.publishBuildInfo buildInfo
     }
-}
+// }
