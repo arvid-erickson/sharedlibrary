@@ -23,6 +23,7 @@ node {
 
     stage ('Gradle build') {
 //        def buildInfo = rtGradle.run rootDir: "some/directory"
+        sh "echo ${localGradle}"
         sh "${localGradle} clean build"
     }
 
