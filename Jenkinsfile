@@ -4,6 +4,7 @@ node {
 //    def server = Artifactory.server url: SERVER_URL, credentialsId: CREDENTIALS
 //    def rtGradle = Artifactory.newGradleBuild()
     // def buildInfo = Artifactory.newBuildInfo()
+    def localGradle = '/usr/local/bin/gradle'
     
     stage ("Clone") {
 //        git clone 'https://...'
@@ -22,7 +23,7 @@ node {
 
     stage ('Gradle build') {
 //        def buildInfo = rtGradle.run rootDir: "some/directory"
-          sh "gradle clean build"
+        sh "${localGradle} clean build"
     }
 
     stage ("Publish build info") {
