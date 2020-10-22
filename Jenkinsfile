@@ -30,6 +30,6 @@ node {
         sh "cp ${buildDir}/build/libs/*.jar ${ArtifactRepo}"
     }
     stage ("Clean build") {
-        sh "rm -rf ${buildDir}/sharedlibrary"   
+        sh "rm -rf ${buildDir}"   
     }
 }
