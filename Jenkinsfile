@@ -11,7 +11,7 @@ node {
     
     stage ("Clone") {
         sh "echo Clone ${repo} to build"
-        git clone 'https://${repo}'
+        sh "git clone https://${repo}"
 //        
     }
 
