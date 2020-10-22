@@ -26,15 +26,12 @@ node {
 
     stage ('Gradle build') {
         sh "cd ${buildDir}; ${localGradle} clean build "
-//.     sh "which gradle"
-//        sh "${localGradle} build"
     }
 
-//    stage ("Publish build info") {
+    stage ("Publish build info") {
 //        server.publishBuildInfo buildInfo
-//        sh "echo Publish build info"
-//        sh "./gradle clean build"
-//    }
+        sh "echo Publish build info"
+    }
 //    stage ("Clean build") {
 //          sh "rm -rf ${buildDir}/sharedlibrary"   
 //    }
