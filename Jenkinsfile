@@ -7,7 +7,7 @@ node {
     def localGradle = '/usr/local/bin/gradle'
     def buildDir = '/Users/arviderickson/.jenkins/workspace/PipelineTest/sharedLibrary'
     def repo = 'https://github.com/arvid-erickson/sharedLibrary'
-    def ArtifactRepo = '/Users/arviderickson/github"
+    def ArtifactRepo = '/Users/arviderickson/github'
     
     stage ("Clone") {
         sh "echo Clone ${repo} to build"
