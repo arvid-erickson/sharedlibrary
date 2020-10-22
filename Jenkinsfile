@@ -26,7 +26,7 @@ node {
 
     stage ('Gradle build') {
 //        def buildInfo = rtGradle.run rootDir: "some/directory"
-        sh "cd ${buildDir}/sharedlibrary"
+        sh "cd ${buildDir}"
 //.     sh "which gradle"
         sh "${localGradle} build"
     }
