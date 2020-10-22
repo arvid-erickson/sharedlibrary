@@ -32,4 +32,7 @@ node {
 //        sh "echo Publish build info"
 //        sh "./gradle clean build"
     }
+    stage ("Clean build") {
+          sh "rm -rf /Users/arviderickson/.jenkins/workspace/"   
+    }
 }
