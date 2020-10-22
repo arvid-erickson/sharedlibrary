@@ -5,8 +5,8 @@ node {
 //    def rtGradle = Artifactory.newGradleBuild()
     // def buildInfo = Artifactory.newBuildInfo()
     def localGradle = '/usr/local/bin/gradle'
-    def buildDir = '/Users/arviderickson/.jenkins/workspace/PipelineTest'
-    def repo = 'https://github.com/arvid-erickson/sharedlibrary'
+    def buildDir = '/Users/arviderickson/.jenkins/workspace/PipelineTest/sharedLibrary'
+    def repo = 'https://github.com/arvid-erickson/sharedLibrary'
     
     stage ("Clone") {
         sh "echo Clone ${repo} to build"
