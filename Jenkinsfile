@@ -1,4 +1,5 @@
 #!/usr/bin/groovy
+// POC for Gradle building and packaging library
 
 node {
     // def server = Artifactory.server url: SERVER_URL, credentialsId: CREDENTIALS
