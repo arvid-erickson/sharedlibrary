@@ -24,6 +24,7 @@ node {
 
     stage ('Gradle build') {
 //        def buildInfo = rtGradle.run rootDir: "some/directory"
+        sh "cd /Users/arviderickson/.jenkins/workspace/P*1/sharedLibrary"
         sh "which gradle"
         sh "${localGradle} clean build"
     }
