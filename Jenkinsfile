@@ -6,11 +6,13 @@ node {
     // def buildInfo = Artifactory.newBuildInfo()
 //    def localGradle = '/usr/local/bin/gradle'
     def localGradle = 'which gradle'
-    deb buildDir = '/Users/arviderickson/.jenkins/workspace/Pipeline*1'
+    def buildDir = '/Users/arviderickson/.jenkins/workspace/Pipeline*1'
+    def repo = 'https://github.com/arvid-erickson/sharedlibrary'
     
     stage ("Clone") {
-//        git clone 'https://...'
-//        sh "echo Clone repo to build"
+        sh "echo Clone ${repo} to build"
+        git clone 'https://${repo}'
+//        
     }
 
     stage ('Artifactory Config') {
