@@ -6,6 +6,7 @@ node {
     // def buildInfo = Artifactory.newBuildInfo()
 //    def localGradle = '/usr/local/bin/gradle'
     def localGradle = 'which gradle'
+    deb buildDir = '/Users/arviderickson/.jenkins/workspace/Pipeline*1'
     
     stage ("Clone") {
 //        git clone 'https://...'
@@ -24,7 +25,7 @@ node {
 
     stage ('Gradle build') {
 //        def buildInfo = rtGradle.run rootDir: "some/directory"
-        sh "cd /Users/arviderickson/.jenkins/workspace/P*1/sharedLibrary"
+        sh "cd ${buildDir}/sharedLibrary"
         sh "which gradle"
         sh "${localGradle} build"
     }
