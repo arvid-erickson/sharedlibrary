@@ -23,8 +23,8 @@ node {
 
     stage ('Gradle build') {
 //        def buildInfo = rtGradle.run rootDir: "some/directory"
-  //      sh "which gradle"
- //       sh "${localGradle} clean build"
+        sh "which gradle"
+        sh "${localGradle} clean build"
     }
 
     stage ("Publish build info") {
