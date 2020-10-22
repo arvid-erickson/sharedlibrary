@@ -19,9 +19,9 @@ node {
         // Set Artifactory repositories for dependancies resolution and artifacts deployment
 //        rtGradle.deployer repo:'ext-release-local', server: server
 //        rtGradle.resolver repo:'remote-repos', server: server
-//        sh "echo Artifactory stuff"
-//        sh "echo This is not implemented yet"
-//        sh "echo Artifactory not available yet"
+          sh "echo Artifactory stuff"
+          sh "echo This is not implemented yet"
+          sh "echo Artifactory not available yet"
     }
 
     stage ('Gradle build') {
@@ -31,12 +31,12 @@ node {
         sh "${localGradle} build"
     }
 
-    stage ("Publish build info") {
+//    stage ("Publish build info") {
 //        server.publishBuildInfo buildInfo
 //        sh "echo Publish build info"
 //        sh "./gradle clean build"
-    }
-    stage ("Clean build") {
+//    }
+//    stage ("Clean build") {
 //          sh "rm -rf ${buildDir}/sharedlibrary"   
-    }
+//    }
 }
