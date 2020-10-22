@@ -31,7 +31,7 @@ node {
     stage ("Publish build info") {
 //        server.publishBuildInfo buildInfo
         sh "echo Publish build info"
-        sh "cp ${buildDir}/sharedlibrary/build/libs/*.jar ${buildDir}"
+        sh "cp ${buildDir}/build/libs/*.jar ${buildDir}"
     }
     stage ("Clean build") {
 //        sh "rm -rf ${buildDir}/sharedlibrary"   
