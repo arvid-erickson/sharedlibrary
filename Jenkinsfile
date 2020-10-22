@@ -37,6 +37,6 @@ node {
 //        sh "./gradle clean build"
     }
     stage ("Clean build") {
-          sh "rm -rf ${buildDir}/sharedlibrary"   
+//          sh "rm -rf ${buildDir}/sharedlibrary"   
     }
 }
