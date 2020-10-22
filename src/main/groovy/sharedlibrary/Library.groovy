@@ -5,22 +5,20 @@ package sharedlibrary
 
 class Library {
     def call() {
-        stages {
-            stage('First') {
-                print "First stage"
-            }
-            stage('Second') {
-                print "Second stage"
-            }
-            stage('Third') {
-                print "Third stage"
-            }
-            stage('Fourth') {
-                print "Fourth stage"
-            }
-            stage('Fifth') {
-                print "Fifth stage"
-            }
-        } 
+        stage('First') {
+            print "First stage"
+        }
+        stage('Second') {
+            print "Second stage"
+        }
+        stage('Third') {
+            print "Third stage"
+        }
+        stage('Fourth') {
+            print "Fourth stage"
+        }
+        stage('Fifth') {
+            print "Fifth stage"
+        }
     }
 }
