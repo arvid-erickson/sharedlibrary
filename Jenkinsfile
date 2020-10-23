@@ -22,6 +22,7 @@ node {
     }
 
     stage ('Gradle build') {
+        sh "echo Gradle build"
         sh "cd ${buildDir}; ${localGradle} clean build "
     }
 
