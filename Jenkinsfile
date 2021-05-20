@@ -23,13 +23,13 @@ node {
 
     stage ('Gradle build') {
         sh "echo Gradle build"
-        sh "cd ${buildDir}; ${localGradle} clean build "
+        sh "echo cd ${buildDir}; ${localGradle} clean build "
     }
 
     stage ("Publish build info") {
         // server.publishBuildInfo buildInfo
         sh "echo Publish build info"
-        sh "cp ${buildDir}/build/libs/*.jar ${ArtifactRepo}"
+        sh "echo cp ${buildDir}/build/libs/*.jar ${ArtifactRepo}"
     }
     stage ("Clean build") {
         sh "rm -rf ${buildDir}"   
