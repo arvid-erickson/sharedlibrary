@@ -1,4 +1,4 @@
-package sharedlibrary
+// package sharedlibrary
 
 class GitManager
 {
